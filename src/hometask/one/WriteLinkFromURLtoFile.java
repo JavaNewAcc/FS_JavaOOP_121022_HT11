@@ -69,23 +69,4 @@ public class WriteLinkFromURLtoFile {
 			}
 		}
 	}
-
-	public static void checkLinks(String fileName) throws IOException {
-		File fileIn = new File(fileName);
-		File fileOut = new File("SiteAvailability.txt");
-		try (BufferedReader br = new BufferedReader(new FileReader(fileIn));
-				FileWriter fw = new FileWriter(fileOut, true)) {
-			while (true) {
-				String spec = br.readLine();
-				if (spec != null) {
-					URL url = new URL(spec);
-					URLConnection connection = url.openConnection();
-					fw.write(connection.getHeaderField(0) + " for " + spec + System.lineSeparator());
-
-				} else {
-					break;
-				}
-			}
-		}
-	}
 }

@@ -12,7 +12,7 @@ public class Main {
 		}
 
 		try {
-			WriteLinkFromURLtoFile.checkLinks("WebAddressesTemp.txt");
+			CheckSiteAvailability.checkLinks("WebAddressesTemp.txt");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
