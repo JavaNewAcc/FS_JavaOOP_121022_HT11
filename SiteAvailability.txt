@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK for https://www.w3schools.com/images/w3schools_logo_436_2.png
+HTTP/1.1 400 Bad Request for https://cse.google.com/cse.js?cx=
+HTTP/1.1 200 OK for https://www.facebook.com/w3schoolscom/
+HTTP/1.1 200 OK for https://profile.w3schools.com
